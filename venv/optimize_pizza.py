@@ -10,17 +10,23 @@ input_filename = 'c_medium.in';
 
 fptr = open(os.environ['HOME']+'/'+input_filename, 'r')
 
-for line in fptr:
-    print(line)
-    print('\n')
+# for line in fptr:
+#     print(line)
+#     print('\n')
 
 
 
 # 1. Вичитати вхідний файл
 # Вхідний параметр: файл на диску з назвою b_small.in
 # Вихідний параметр1: Масив(список чи кортеж) input_data[], де перший елемент - перший рядок, другий елемент - другий рядок тощо
+input_data = []
+for line in fptr:
+    input_data.append(line)
 
+print('Look on input_data[]:')
+print(input_data)
 
+fptr.close()
 # 2. Зробити цикл, який проходить по всім елементам input_data[]
 
 # 3. В циклі
