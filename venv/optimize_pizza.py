@@ -3,6 +3,14 @@
 import os
 import sys
 
+def iterate_till_win(_list_of_pizzas,_slices_maximum):
+    # Write your code here
+    if _slices_maximum < 0:
+        return 0
+
+def delta(_list_of_pizzas,_slices_maximum):
+    return _list_of_pizzas.count() - _slices_maximum
+
 print('Script works!')
 print(os.environ['HOME'])
 
@@ -27,6 +35,9 @@ print('Look on input_data[]:')
 print(input_data)
 
 fptr.close()
+
+print('Check:')
+
 # 2. Зробити цикл, який проходить по всім елементам input_data[]
 
 # 3. В циклі
