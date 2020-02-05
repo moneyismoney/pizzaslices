@@ -62,7 +62,12 @@ print("--- %s seconds ---" % (time.time() - start_time))
     # input_data.pop(-1)
 
 # 5.[Oleh] Згенерувати файл результату
-# fptr = open(os.environ['HOME'], 'w')
+number_of_types = len(input_data)
+types_of_pizza = ' '.join(map(str(), input_data))
+result = number_of_types + '\n' + types_of_pizza
+
+with open('result.txt', 'w') as f:
+	f.writelines(result)
 
 # fptr.write(str(result) + '\n')
 
