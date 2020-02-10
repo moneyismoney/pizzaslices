@@ -37,7 +37,12 @@ while True:
     sum_input_data -= input_data.pop()
 
 # 5.[Oleh] Згенерувати файл результату
-
+## На виході очіують не самі числа, а їх індекси
+final_output = []
+for current_index in range(0, len(input_data)):
+    final_output.append(current_index)
+input_data = final_output
+##
 input_data = list(map(str, input_data))
 
 with open('result/' + input_filename, 'w') as f:
